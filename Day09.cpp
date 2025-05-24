@@ -7,7 +7,6 @@ bool exists(int arr[], int size, int value) {
             return true;
     return false;
 }
-
 void findUnion(int arr1[], int size1, int arr2[], int size2) {
     int unionArr[100], index = 0;
 
@@ -24,10 +23,9 @@ void findUnion(int arr1[], int size1, int arr2[], int size2) {
         cout << unionArr[i] << " ";
     cout << endl;
 }
-
 int main() {
     int arr1[] = {1, 2, 4, 5};
-    int arr2[] = {2, 3, 5, 6};
+    int arr2[] = {2, 3, 6, 7};
 
     findUnion(arr1, 4, arr2, 4);
 
