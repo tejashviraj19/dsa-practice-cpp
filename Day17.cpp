@@ -9,7 +9,7 @@ d. 50 to 59 - C
 e. 60 to 79 - B
 f. 80 to 100 - A
 Ask user to user marks and print the corresponding grde. 
-*/
+
 int main() {
     int marks;
     cin >> marks;
@@ -33,3 +33,47 @@ int main() {
     }    
     return 0;
 }    
+*/    
+/* Take the age from the user and decide accordingly
+1.  If age < 18,
+print "not eligible for job"
+2. If age => 18, 
+print "eligible for job "
+3. If age >= 54 and age <= 57,
+print "eligible for job, but retirement soon"
+4. If age > 57
+    print "retirement time"
+int main() {
+    int age;
+    cin >> age;
+    if(age <18) {
+        cout << "not eligible for job";
+    }
+    else if(age <54) {
+        cout << "eligible for job";
+    }
+    else if (age <= 57) {
+        cout << "eligible for job, but retirement soon";
+    }
+    else if (age > 57) {
+        cout << "retirement time";
+    }
+}   
+*/
+int main() {
+    int age;
+    cin >> age;
+    if(age <18) {
+        cout << "not eligible for job";
+    }
+    else if (age <= 57) {
+        cout << "eligible for job";
+        //nested if condition
+        if (age >= 55) {
+            cout << ", but retirement soon";
+        }
+    }
+    else {
+        cout << "retirement time";
+    }
+}       
